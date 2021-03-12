@@ -11,6 +11,6 @@ chmod +x *
 sh install.sh
 python3 main.py
 ```
-<h3>Credits: Black Hell Team
-Coded by: Near Shelby</h3>
+<h3>Credits: Black Hell Team</h3>
+<h3>Coded by: Near Shelby</h3>
 <hr>
