@@ -7,4 +7,4 @@ apt install python-pip -y
 apt install python3-pip -y
 pip3 install requests
 clear
-echo "Ready, now just type > python3 main.py"
+echo "Ready, now just type > python3 main.py\n"
