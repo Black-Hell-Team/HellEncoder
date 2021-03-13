@@ -1,6 +1,6 @@
 <hr>
 <h2>HellEncoder</h2>
-<h3>Python tool still in development, it was made to encode, hash and encrypt.</h3>
+<h3>Python tool still in development, it was made to encode and hash.</h3>
 <h2>How to install and run on Debian linux and derivatives and even on Termux:</h2><br>
 
 ```
