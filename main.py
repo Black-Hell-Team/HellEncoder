@@ -12,10 +12,10 @@ def main():
 | | | |                           
 |_| |_| 
 
-\033[1;36m[\033[1;35m01\033[1;36m] \033[1;35mBase64 encode
-\033[1;36m[\033[1;35m02\033[1;36m] \033[1;35mMD5 encode
-\033[1;36m[\033[1;35m03\033[1;36m] \033[1;35mMD4 encode
-\033[1;36m[\033[1;35m04\033[1;36m] \033[1;35mBase16 encode
+\033[1;36m[\033[1;35m01\033[1;36m] \033[1;35mBase64
+\033[1;36m[\033[1;35m02\033[1;36m] \033[1;35mMD5
+\033[1;36m[\033[1;35m03\033[1;36m] \033[1;35mMD4
+\033[1;36m[\033[1;35m04\033[1;36m] \033[1;35mBase16
 \033[1;36m[\033[1;35m05\033[1;36m] \033[1;35mBack/Credits
 ''')
 
@@ -55,7 +55,7 @@ def main():
 ██║ ╚═╝ ██║██████╔╝███████║
 ╚═╝     ╚═╝╚═════╝ ╚══════╝
 ''')
-        md5 = input("\033[1;36mEnter the text you want to encrypt:\033[1;93m ")
+        md5 = input("\033[1;36mEnter the text to generate a hash:\033[1;93m ")
         request = requests.get('https://api.hashify.net/hash/md5/hex?value={}'.format(md5))
         address_data = request.json()
 
@@ -81,7 +81,7 @@ def main():
 ╚═╝     ╚═╝╚═════╝      ╚═╝
 ''')
 
-        md4 = input("\033[1;36mEnter the text you want to encrypt:\033[1;93m ")
+        md4 = input("\033[1;36mEnter the text to generate a hash:\033[1;93m ")
         request = requests.get('https://api.hashify.net/hash/md4/hex?value={}'.format(md4))
         address_data = request.json()
 
@@ -106,7 +106,7 @@ def main():
 ██████╔╝██║  ██║███████║███████╗     ██║╚██████╔╝
 ╚═════╝ ╚═╝  ╚═╝╚══════╝╚══════╝     ╚═╝ ╚═════╝
 ''')
-        data = input("\033[1;36mEnter the text you want to encrypt:\033[1;93m ")
+        data = input("\033[1;36mEnter the text you want to encode:\033[1;93m ")
         encoded = data.encode("utf-8")
         b16 = base64.b16encode(encoded)
         print(f"\n\033[1;92mEncrypted text: {b16}\n")
