@@ -60,7 +60,7 @@ def main():
         address_data = request.json()
 
         if 'erro' not in address_data:
-            print('\n\033[1;92mHash {}\n'.format(address_data['Digest']))
+            print('\n\033[1;92mHash: {}\n'.format(address_data['Digest']))
 
         back = input('\033[1;33mDo you want to return to the menu? \033[1;32my\033[1;33m/\033[1;31mn\033[1;33m:\033[1;36m ')
         if back == 'Y' or back == 'y':
@@ -109,7 +109,7 @@ def main():
         data = input("\033[1;36mEnter the text you want to encode:\033[1;93m ")
         encoded = data.encode("utf-8")
         b16 = base64.b16encode(encoded)
-        print(f"\n\033[1;92mEncrypted text: {b16}\n")
+        print(f"\n\033[1;92mEncoded text: {b16}\n")
 
         back = input('\033[1;33mDo you want to return to the menu? \033[1;32my\033[1;33m/\033[1;31mn\033[1;33m:\033[1;36m ')
         if back == 'y' or back == 'Y':
