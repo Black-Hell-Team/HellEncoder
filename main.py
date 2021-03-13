@@ -2,6 +2,7 @@ import os
 import base64
 import requests
 import time
+from backbanner import FinalBanner
 
 def main():
     os.system("clear")
@@ -12,10 +13,10 @@ def main():
 | | | |                           
 |_| |_| 
 
-\033[1;36m[\033[1;35m01\033[1;36m] \033[1;35mBase64
-\033[1;36m[\033[1;35m02\033[1;36m] \033[1;35mMD5
-\033[1;36m[\033[1;35m03\033[1;36m] \033[1;35mMD4
-\033[1;36m[\033[1;35m04\033[1;36m] \033[1;35mBase16
+\033[1;36m[\033[1;35m01\033[1;36m] \033[1;35mBase64 encoding
+\033[1;36m[\033[1;35m02\033[1;36m] \033[1;35mGenerate MD5 Hash
+\033[1;36m[\033[1;35m03\033[1;36m] \033[1;35mGenerate MD4 Hash
+\033[1;36m[\033[1;35m04\033[1;36m] \033[1;35mBase16 encoding
 \033[1;36m[\033[1;35m05\033[1;36m] \033[1;35mBack/Credits
 ''')
 
@@ -32,9 +33,9 @@ def main():
 ╚═════╝ ╚═╝  ╚═╝╚══════╝╚══════╝     ╚═════╝      ╚═╝
 ''')
         message = input("\033[1;36mEnter the text you want to encode:\033[1;93m ")
-        message_bytes = message.encode('ascii')
+        message_bytes = message.encode('utf-8')
         base64_bytes = base64.b64encode(message_bytes)
-        base64_message = base64_bytes.decode('ascii')
+        base64_message = base64_bytes.decode('utf-8')
         print(f'\n\033[1;92mEncoded text: {base64_message}\n')
 
         back = input("\033[1;33mDo you want to return to the menu? \033[1;32my\033[1;33m/\033[1;31mn\033[1;33m:\033[1;36m ")
@@ -43,6 +44,7 @@ def main():
         
         else:
             os.system("clear")
+            FinalBanner()
             exit()
 
     elif op == '02' or op == '2':
@@ -68,6 +70,7 @@ def main():
 
         else:
             os.system("clear")
+            FinalBanner()
             exit()
 
     elif op == '03' or op == '3':
@@ -94,6 +97,7 @@ def main():
 
         else:
             os.system("clear")
+            FinalBanner()
             exit()
 
     elif op == '04' or op == '4':
@@ -117,7 +121,9 @@ def main():
 
         else:
             os.system("clear")
+            FinalBanner()
             exit()
+
     elif op == '05' or op == '5':
         os.system("clear")
         print('''\033[1;31m
@@ -141,3 +147,4 @@ ____  _            _      _   _      _ _   _____
         main()
 
 main()
+
