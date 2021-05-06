@@ -134,7 +134,7 @@ ____  _            _      _   _      _ _   _____
 |____/|_|\__,_|\___|_|\_\ |_| |_|\___|_|_|   |_|\___|\__,_|_| |_| |_|\n
 
 \033[1;36mTeam:\033[1;32m Black Hell Team
-\033[1;36mCoded by:\033[1;32m Near Shelby (Leader)
+\033[1;36mCoded by:\033[1;32m Jo Power Tech (Leader)
 \033[1;36mTeam YT channel:\033[1;32m https://www.youtube.com/channel/UCFdCJf8YKHvOuWu2UxRI1fg
 \033[1;36mGithub ORG:\033[1;32m https://github.com/Black-Hell-Team
 \033[1;36mCountry:\033[1;32m Brazil
